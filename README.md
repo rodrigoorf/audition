@@ -144,8 +144,7 @@ This will include the cluster context in the command line, so it is possible to 
 5. Run the following command to deploy the application within the cluster:
 
 ````commandline
-cd audition-helm
-helm install audition audition-helm
+helm install audition audition-helm/
 ````
 
 6. After deploying, run the following command to figure out the external IP for the application:
@@ -156,7 +155,7 @@ kubectl get service audition-audition-helm
 
 7. Copy the IP address inside the column **EXTERNAL-IP**, like the following example:
 
-![external ip example.png](external ip example.png)
+![external ip example.jpg](https://raw.githubusercontent.com/rodrigoorf/audition/main/external%20ip%20example.png?token=GHSAT0AAAAAAB77DZVG3TZJIM5GORD6TQNOZAPKWVA)
 
 8. Open a browser and try to reach the application using the external IP address. Following the example from the image, this would be http://20.165.9.232/docs.
 
